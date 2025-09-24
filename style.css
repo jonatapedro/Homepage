@@ -53,7 +53,7 @@ nav ul li a:hover {
 #apresentacao {
   text-align: center; /* Centraliza o conteúdo */
   padding: 50px 0; /* Espaço acima e abaixo */
-  background-color: #0b57e4; /* Fundo laranja */
+  background-color: #0b45e4; /* Fundo laranja */
 }
 
 .foto-perfil {
@@ -64,9 +64,9 @@ nav ul li a:hover {
   transition: transform 0.3s ease; /* Efeito suave de zoom */
 }
 
-#apresentacao h1 {
-  font-size: 2rem; /* Tamanho do nome */
-  color: #333; /* Cor do texto */
+#apresentacao h1,
+#apresentacao h3 {
+  color: #ffffff;
 }
 
 #apresentacao:hover .foto-perfil {
