@@ -53,7 +53,7 @@ nav ul li a:hover {
 #apresentacao {
   text-align: center; /* Centraliza o conteúdo */
   padding: 50px 0; /* Espaço acima e abaixo */
-  background-color: #0b45e4; /* Fundo laranja */
+  background-color: #0b45e4; /* Fundo azul vibrante */
 }
 
 .foto-perfil {
@@ -65,8 +65,8 @@ nav ul li a:hover {
 }
 
 #apresentacao h1,
-#apresentacao h3 {
-  color: #ffffff;
+#apresentacao h4 {
+  color: #ffffff; /* Cor branca para o texto */
 }
 
 #apresentacao:hover .foto-perfil {
@@ -131,6 +131,26 @@ nav ul li a:hover {
 }
 
 /* ============================= */
+/* Estilo da seção Habilidades  */
+/* ============================= */
+#Habilidades ul {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o espaçamento padrão da lista */
+  display: flex; /* Deixa os itens lado a lado */
+  flex-wrap: wrap; /* Quebra a linha se necessário */
+  gap: 10px; /* Espaço entre os itens */
+  justify-content: center; /* Centraliza os itens na horizontal */
+}
+
+#Habilidades li {
+  background-color: #f0f0f0; /* Cor de fundo clara para cada item */
+  padding: 10px 15px; /* Espaçamento interno dos itens */
+  border-radius: 20px; /* Bordas arredondadas para estilo de "tag" */
+  font-weight: bold; /* Texto em negrito */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+/* ============================= */
 /* Botões de contato            */
 /* ============================= */
 .links-contato {
@@ -154,20 +174,6 @@ nav ul li a:hover {
 }
 
 /* ============================= */
-/* Responsividade para celular  */
-/* ============================= */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Menu em coluna */
-  }
-
-  .links-contato {
-    flex-direction: column; /* Botões empilhados */
-    align-items: center; /* Centraliza os botões */
-  }
-}
-
-/* ============================= */
 /* Cores específicas por botão  */
 /* ============================= */
 #Email {
@@ -180,4 +186,23 @@ nav ul li a:hover {
 
 #GitHub {
   background-color: black; /* Botão do GitHub em preto */
+}
+
+/* ============================= */
+/* Responsividade para celular  */
+/* ============================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menu em coluna para telas pequenas */
+  }
+
+  .links-contato {
+    flex-direction: column; /* Botões empilhados verticalmente */
+    align-items: center; /* Centraliza os botões */
+  }
+
+  #Habilidades ul {
+    flex-direction: column; /* Habilidades em coluna no mobile */
+    align-items: center;
+  }
 }
