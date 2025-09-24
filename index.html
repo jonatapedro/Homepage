@@ -1,162 +1,156 @@
 <!DOCTYPE html>
-<!-- Declaração do tipo de documento. Informa ao navegador que o documento é HTML5 -->
+<!-- Declara que o documento está usando HTML5 -->
 <html lang="pt-br">
-<!-- Tag raiz do documento HTML. O atributo 'lang' define o idioma como português do Brasil -->
+<!-- Define o idioma da página como português do Brasil -->
 
-  <head>
-    <!-- Cabeçalho do documento, com metadados e links para recursos externos -->
+<head>
+  <!-- Cabeçalho da página: contém metadados e links externos -->
 
-    <meta charset="UTF-8" />
-    <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação e caracteres especiais -->
+  <meta charset="UTF-8" />
+  <!-- Define o conjunto de caracteres como UTF-8, permitindo acentos e símbolos -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Configura a visualização em dispositivos móveis, garantindo responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Garante que a página seja responsiva em dispositivos móveis -->
 
-    <title>Pedro Jonata - Portfólio</title>
-    <!-- Título da página exibido na aba do navegador -->
+  <title>Pedro Jonata - Portfólio</title>
+  <!-- Título que aparece na aba do navegador -->
 
-    <link rel="stylesheet" href="style.css" />
-    <!-- Importa o arquivo de estilos CSS externo que define o design da página -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Importa o arquivo CSS externo com os estilos da página -->
+</head>
 
-  </head>
+<body>
+  <!-- Corpo da página: tudo que é visível ao usuário -->
 
-  <body>
-    <!-- Corpo da página: tudo que é visível ao usuário está aqui -->
+  <header>
+    <!-- Cabeçalho da página, geralmente com o menu de navegação -->
 
-    <header>
-      <!-- Cabeçalho da página: geralmente contém logo, menu de navegação, etc -->
+    <nav>
+      <!-- Área de navegação com links para seções internas -->
+      <ul>
+        <!-- Lista de links do menu -->
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <nav>
-        <!-- Tag de navegação: contém os links para as seções da página -->
-        <ul>
-          <!-- Lista não ordenada de links do menu -->
-          <li><a href="#sobre">Sobre</a></li>
-          <!-- Link âncora para a seção "sobre" -->
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <!-- As seções "Habilidades" e "Conhecimentos" estão juntas -->
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+  <main>
+    <!-- Conteúdo principal da página -->
 
-    <main>
-      <!-- Conteúdo principal da página -->
+    <section id="apresentacao">
+      <!-- Seção de apresentação pessoal -->
 
-      <!-- Seção de Apresentação -->
-      <section id="apresentacao">
-        <!-- Seção com a apresentação do Pedro -->
+      <img
+        src="c:\Users\pedro\OneDrive\Pictures\Camera Roll\pedro.jpg"
+        alt="Foto de Perfil de Pedro Jonata"
+        class="foto-perfil"
+      />
+      <!-- Imagem de perfil (OBS: caminho local só funciona no seu computador; para funcionar online, use uma URL ou caminho relativo ao projeto) -->
 
-        <img
-          src="pedro.jpg"
-          alt="Foto de Perfil de Pedro Jonata"
-          class="foto-perfil"
-        />
-        <!-- Imagem de perfil (OBS: esse caminho local não funciona na web; deve usar uma URL ou caminho relativo ao projeto) -->
+      <h1>Pedro Jonata</h1>
+      <!-- Nome principal em destaque -->
 
-        <h1>Pedro Jonata</h1>
-        <!-- Título principal da página, normalmente com o nome da pessoa -->
+      <p>Aluno da Faculdade CDL</p>
+      <!-- Descrição breve -->
+    </section>
 
-        <p>Aluno da Faculdade CDL</p>
-        <!-- Parágrafo de apresentação resumida -->
-      </section>
+    <section id="sobre" class="conteudo-secao">
+      <!-- Seção "Sobre Mim" -->
 
-      <!-- Seção Sobre -->
-      <section id="sobre" class="conteudo-secao">
-        <!-- Seção com informações pessoais e introdutórias -->
+      <h2>Sobre Mim</h2>
+      <!-- Título da seção -->
 
-        <h2>Sobre Mim</h2>
-        <!-- Título de segundo nível da seção -->
+      <p>Olá! Sou Pedro Jonata, apaixonado pelo mundo da tecnologia</p>
+      <!-- Texto de apresentação pessoal -->
+    </section>
 
-        <p>Olá! Sou Pedro Jonata, apaixonado pelo mundo da tecnologia</p>
-        <!-- Parágrafo com um breve texto sobre você -->
-      </section>
+    <section id="hobbies" class="conteudo-secao">
+      <!-- Seção de hobbies e interesses -->
 
-      <!-- Seção Hobbies -->
-      <section id="hobbies" class="conteudo-secao">
-        <!-- Seção com os hobbies/interesses pessoais -->
+      <h2>Hobbies</h2>
+      <!-- Título da seção -->
 
-        <h2>Hobbies</h2>
-        <!-- Título da seção -->
+      <p>
+        Gosto de explorar novas tecnologias, assistir filmes e ler sobre
+        desenvolvimento pessoal
+      </p>
+      <!-- Texto com seus hobbies -->
+    </section>
 
-        <p>
-          Gosto de explorar novas tecnologias, assistir filmes e ler sobre
-          desenvolvimento pessoal
-        </p>
-        <!-- Parágrafo descrevendo seus hobbies -->
-      </section>
+    <section id="habilidades" class="conteudo-secao">
+      <!-- Seção de habilidades técnicas e interpessoais -->
 
-      <!-- Seção Habilidades (também chamada de "Conhecimentos") -->
-      <section id="habilidades" class="conteudo-secao">
-        <h2>Conhecimentos</h2>
-        <!-- Título da seção -->
+      <h2>Conhecimentos</h2>
+      <!-- Título da seção -->
 
-        <!-- Habilidades Técnicas (Hard Skills) -->
-        <div class="skills-bar">
-          <!-- Container para as barras de habilidades -->
+      <div class="skills-bar">
+        <!-- Container das barras de habilidades -->
 
-          <div class="skill-item">
-            <!-- Item individual de habilidade -->
-            <span>Linguagens de Programação (HTML/CSS)</span>
-            <!-- Nome da habilidade -->
-
-            <div class="bar">
-              <!-- Barra que representa o nível da habilidade -->
-              <div class="progress" style="width: 80%"><span>10%</span></div>
-              <!-- Parte preenchida da barra (OBS: texto diz 10%, mas o width está em 80%) -->
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <span>Lógica de Programação</span>
-            <div class="bar">
-              <div class="progress" style="width: 70%"><span>70%</span></div>
-            </div>
+        <div class="skill-item">
+          <!-- Item de habilidade técnica -->
+          <span>Linguagens de Programação (HTML/CSS/JAVA)</span>
+          <div class="bar">
+            <div class="progress" style="width: 90%"><span>90%</span></div>
           </div>
         </div>
 
-        <!-- Habilidades Interpessoais (Soft Skills) -->
-        <h3>Habilidades Interpessoais</h3>
-        <!-- Subtítulo para habilidades pessoais -->
-
-        <ul>
-          <!-- Lista de habilidades pessoais -->
-          <li>Comunicação eficaz</li>
-          <li>Trabalho em equipe</li>
-          <li>Resolução de conflitos</li>
-          <li>Liderança</li>
-          <li>Empatia</li>
-        </ul>
-      </section>
-
-      <!-- Seção Contato -->
-      <section id="contato" class="conteudo-secao">
-        <h2>Contato</h2>
-        <!-- Título da seção de contato -->
-
-        <p>Sinta-se à vontade para entrar em contato:</p>
-        <!-- Mensagem introdutória -->
-
-        <div class="links-contato">
-          <!-- Container com os botões de contato -->
-
-          <a href="mailto:jonatap463@gmail.com" class="botao">Email</a>
-          <!-- Link para enviar e-mail -->
-
-          <a href="https://web.whatsapp.com/" class="botao" target="_blank">WhatsApp</a>
-          <!-- Link para WhatsApp Web -->
-
-          <a href="https://github.com/" class="botao" target="_blank">GitHub</a>
-          <!-- Link para o GitHub -->
+        <div class="skill-item">
+          <span>Lógica de Programação</span>
+          <div class="bar">
+            <div class="progress" style="width: 70%"><span>70%</span></div>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer>
-      <!-- Rodapé da página -->
-      <p>&copy; 2025 Pedro Jonata. Todos os direitos reservados.</p>
-      <!-- Mensagem de direitos autorais -->
-    </footer>
+      <div class="skill-item">
+        <!-- Item fora do container anterior (pode ser movido para dentro de `.skills-bar` para organização) -->
+        <span>PHP</span>
+        <div class="bar">
+          <div class="progress" style="width: 50%"><span>50%</span></div>
+        </div>
+      </div>
+    </div> <!-- ⚠️ Esse fechamento de `</div>` está sobrando e pode causar erro -->
 
-  </body>
+      <h3>Habilidades Interpessoais</h3>
+      <!-- Subtítulo para soft skills -->
+
+      <ul>
+        <!-- Lista de habilidades interpessoais -->
+        <li>Comunicação eficaz</li>
+        <li>Trabalho em equipe</li>
+        <li>Resolução de conflitos</li>
+        <li>Liderança</li>
+        <li>Empatia</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="conteudo-secao">
+      <!-- Seção de contato -->
+
+      <h2>Contato</h2>
+      <!-- Título da seção -->
+
+      <p>Sinta-se à vontade para entrar em contato:</p>
+      <!-- Texto introdutório -->
+
+      <div class="links-contato">
+        <!-- Botões de contato -->
+
+        <a href="mailto:jonatap463@gmail.com" class="botao" id="Email">Email</a>
+        <a href="https://web.whatsapp.com/" class="botao" target="_blank" id="whatsapp">WhatsApp</a>
+        <a href="https://github.com/" class="botao" target="_blank" id="GitHub">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Rodapé da página -->
+    <p>&copy; 2025 Pedro Jonata. Todos os direitos reservados.</p>
+    <!-- Direitos autorais -->
+  </footer>
+
+</body>
 </html>
