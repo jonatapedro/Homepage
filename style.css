@@ -1,42 +1,46 @@
-/* Resetando alguns estilos padrões dos navegadores */
+/* ============================= */
+/* Resetando estilos padrões    */
+/* ============================= */
 * {
-  margin: 0; /* Remove as margens padrão */
-  padding: 0; /* Remove os preenchimentos padrão */
-  box-sizing: border-box; /* Faz com que padding e border não aumentem o tamanho do elemento */
+  margin: 0; /* Remove margens padrão de todos os elementos */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box; /* Inclui padding e borda dentro da largura total */
 }
 
-/* Estilo geral do corpo da página */
+/* ============================= */
+/* Estilo geral do corpo        */
+/* ============================= */
 body {
   font-family: "Arial", sans-serif; /* Define a fonte principal */
-  line-height: 1.6; /* Altura da linha para facilitar leitura */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
   background-color: #ebe3e3; /* Cor de fundo clara */
   color: #333; /* Cor do texto padrão (cinza escuro) */
 }
 
 /* ============================= */
-/* Estilo do cabeçalho (Header) */
+/* Cabeçalho e navegação        */
 /* ============================= */
 header {
-  background-color: #1c12aa; /* Cor de fundo do cabeçalho (azul escuro) */
+  background-color: #1c12aa; /* Fundo azul escuro */
   padding: 1rem; /* Espaçamento interno */
 }
 
 nav ul {
-  display: flex; /* Deixa os itens lado a lado */
-  justify-content: center; /* Centraliza os links horizontalmente */
-  list-style: none; /* Remove os marcadores de lista */
+  display: flex; /* Alinha os itens do menu em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  list-style: none; /* Remove os marcadores da lista */
 }
 
 nav ul li {
-  margin: 0 15px; /* Espaçamento lateral entre os links */
+  margin: 0 15px; /* Espaço entre os itens do menu */
 }
 
 nav ul li a {
   color: white; /* Cor dos links */
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none; /* Remove sublinhado */
   font-weight: bold; /* Negrito */
   font-size: 1.1rem; /* Tamanho da fonte */
-  transition: color 0.3s ease; /* Suaviza a mudança de cor ao passar o mouse */
+  transition: color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
 nav ul li a:hover {
@@ -44,12 +48,12 @@ nav ul li a:hover {
 }
 
 /* ============================= */
-/* Seção de Apresentação        */
+/* Seção de apresentação        */
 /* ============================= */
 #apresentacao {
   text-align: center; /* Centraliza o conteúdo */
-  padding: 50px 0; /* Espaço interno (cima e baixo) */
-  background-color: #e4700b; /* Cor de fundo clara */
+  padding: 50px 0; /* Espaço acima e abaixo */
+  background-color: #0b57e4; /* Fundo laranja */
 }
 
 .foto-perfil {
@@ -57,7 +61,7 @@ nav ul li a:hover {
   width: 150px;
   height: 150px;
   margin-bottom: 20px; /* Espaço abaixo da imagem */
-  transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+  transition: transform 0.3s ease; /* Efeito suave de zoom */
 }
 
 #apresentacao h1 {
@@ -65,13 +69,12 @@ nav ul li a:hover {
   color: #333; /* Cor do texto */
 }
 
-/* Efeito de zoom na imagem de perfil ao passar o mouse */
 #apresentacao:hover .foto-perfil {
-  transform: scale(1.1); /* Aumenta em 10% */
+  transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
 }
 
 /* ============================= */
-/* Estilo das seções principais */
+/* Seções principais             */
 /* ============================= */
 .conteudo-secao {
   margin: 50px 0; /* Espaço acima e abaixo da seção */
@@ -79,25 +82,22 @@ nav ul li a:hover {
   background-color: #fff; /* Fundo branco */
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  
-  /* Animação de entrada */
   opacity: 0; /* Começa invisível */
   transform: translateY(50px); /* Desloca para baixo */
-  animation: fadeIn 1s forwards; /* Aplica animação para aparecer suavemente */
+  animation: fadeIn 1s forwards; /* Animação de entrada */
 }
 
-/* Animação para fazer a seção aparecer suavemente */
 @keyframes fadeIn {
   to {
     opacity: 1; /* Fica visível */
-    transform: translateY(0); /* Volta para a posição normal */
+    transform: translateY(0); /* Volta à posição original */
   }
 }
 
 .conteudo-secao h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  text-align: center; /* Centraliza o título da seção */
+  font-size: 1.8rem; /* Tamanho do título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  text-align: center; /* Centraliza o título */
 }
 
 /* ============================= */
@@ -105,8 +105,8 @@ nav ul li a:hover {
 /* ============================= */
 .skills-bar {
   display: flex;
-  flex-direction: column; /* Alinha uma barra embaixo da outra */
-  gap: 15px; /* Espaçamento entre as barras */
+  flex-direction: column; /* Empilha as barras verticalmente */
+  gap: 15px; /* Espaço entre elas */
 }
 
 .skill-item {
@@ -114,24 +114,24 @@ nav ul li a:hover {
 }
 
 .bar {
-  background-color: #e0e0e0; /* Fundo da barra (cinza claro) */
+  background-color: #e0e0e0; /* Fundo da barra */
   border-radius: 5px;
   width: 100%;
   height: 25px;
 }
 
 .progress {
-  background-color: #4caf50; /* Cor da barra de progresso (verde) */
+  background-color: #2af817; /* Cor da barra preenchida (verde neon) */
   height: 100%;
   text-align: center;
   color: white;
   line-height: 25px; /* Centraliza o texto verticalmente */
   border-radius: 5px;
-  transition: width 1s ease-in-out; /* Suaviza a mudança de tamanho da barra */
+  transition: width 1s ease-in-out; /* Suaviza a mudança de largura */
 }
 
 /* ============================= */
-/* Links de Contato             */
+/* Botões de contato            */
 /* ============================= */
 .links-contato {
   display: flex;
@@ -140,30 +140,44 @@ nav ul li a:hover {
 }
 
 .botao {
-  background-color: #4caf50; /* Fundo do botão (verde) */
+  background-color: #3dfa03; /* Fundo verde claro */
   color: white;
-  padding: 10px 20px; /* Espaçamento interno */
+  padding: 10px 20px; /* Espaço interno */
   border-radius: 5px; /* Bordas arredondadas */
   text-decoration: none; /* Remove sublinhado */
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Transição suave no hover */
+  transition: background-color 0.3s ease; /* Transição suave */
 }
 
 .botao:hover {
-  background-color: #45a049; /* Cor ao passar o mouse */
+  background-color: #12c529; /* Cor ao passar o mouse */
 }
 
 /* ============================= */
-/* Responsividade (Celulares)   */
+/* Responsividade para celular  */
 /* ============================= */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column; /* Coloca os links do menu em coluna */
+    flex-direction: column; /* Menu em coluna */
   }
 
   .links-contato {
-    flex-direction: column; /* Botões de contato empilhados */
+    flex-direction: column; /* Botões empilhados */
     align-items: center; /* Centraliza os botões */
   }
 }
 
+/* ============================= */
+/* Cores específicas por botão  */
+/* ============================= */
+#Email {
+  background-color: red; /* Botão de email em vermelho */
+}
+
+#whatsapp {
+  background-color: #238310; /* Botão do WhatsApp em verde escuro */
+}
+
+#GitHub {
+  background-color: black; /* Botão do GitHub em preto */
+}
